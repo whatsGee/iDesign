@@ -30,6 +30,7 @@ public class Credits extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setTitle("Credits");
+        setResizable(false);
 
         backCredit.setBackground(new java.awt.Color(0, 51, 102));
         backCredit.setFont(new java.awt.Font("Maiandra GD", 1, 14)); // NOI18N
@@ -48,17 +49,18 @@ public class Credits extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(backCredit)
-                .addContainerGap(522, Short.MAX_VALUE))
+                .addContainerGap(506, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(369, Short.MAX_VALUE)
+                .addContainerGap(361, Short.MAX_VALUE)
                 .addComponent(backCredit)
                 .addContainerGap())
         );
 
-        pack();
+        setSize(new java.awt.Dimension(600, 400));
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     private void backCreditActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backCreditActionPerformed

@@ -29,11 +29,17 @@ public class Menu extends javax.swing.JFrame {
         playButton = new javax.swing.JButton();
         scoreButton = new javax.swing.JButton();
         creditButton = new javax.swing.JButton();
+        jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Hangman by iDesign");
+        setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        setMaximumSize(new java.awt.Dimension(600, 400));
+        setResizable(false);
+        setSize(new java.awt.Dimension(600, 400));
+        getContentPane().setLayout(null);
 
-        playButton.setBackground(new java.awt.Color(0, 51, 102));
+        playButton.setBackground(new java.awt.Color(153, 153, 153));
         playButton.setFont(new java.awt.Font("Maiandra GD", 1, 18)); // NOI18N
         playButton.setForeground(new java.awt.Color(255, 255, 255));
         playButton.setText("PLAY");
@@ -42,8 +48,10 @@ public class Menu extends javax.swing.JFrame {
                 playButtonActionPerformed(evt);
             }
         });
+        getContentPane().add(playButton);
+        playButton.setBounds(280, 230, 170, 30);
 
-        scoreButton.setBackground(new java.awt.Color(0, 51, 102));
+        scoreButton.setBackground(new java.awt.Color(153, 153, 153));
         scoreButton.setFont(new java.awt.Font("Maiandra GD", 1, 18)); // NOI18N
         scoreButton.setForeground(new java.awt.Color(255, 255, 255));
         scoreButton.setText("HIGH SCORES");
@@ -52,8 +60,10 @@ public class Menu extends javax.swing.JFrame {
                 scoreButtonActionPerformed(evt);
             }
         });
+        getContentPane().add(scoreButton);
+        scoreButton.setBounds(280, 270, 170, 30);
 
-        creditButton.setBackground(new java.awt.Color(0, 51, 102));
+        creditButton.setBackground(new java.awt.Color(153, 153, 153));
         creditButton.setFont(new java.awt.Font("Maiandra GD", 1, 18)); // NOI18N
         creditButton.setForeground(new java.awt.Color(255, 255, 255));
         creditButton.setText("CREDITS");
@@ -62,32 +72,16 @@ public class Menu extends javax.swing.JFrame {
                 creditButtonActionPerformed(evt);
             }
         });
+        getContentPane().add(creditButton);
+        creditButton.setBounds(280, 310, 170, 30);
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(201, 201, 201)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(creditButton, javax.swing.GroupLayout.PREFERRED_SIZE, 175, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(scoreButton, javax.swing.GroupLayout.PREFERRED_SIZE, 175, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(playButton, javax.swing.GroupLayout.PREFERRED_SIZE, 175, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(224, Short.MAX_VALUE))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(211, Short.MAX_VALUE)
-                .addComponent(playButton, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(scoreButton, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(creditButton, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(45, 45, 45))
-        );
+        jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\Gian\\OneDrive\\Pictures\\Random\\hm3.jpg")); // NOI18N
+        jLabel1.setPreferredSize(new java.awt.Dimension(600, 400));
+        getContentPane().add(jLabel1);
+        jLabel1.setBounds(-20, 0, 600, 400);
 
-        pack();
+        setSize(new java.awt.Dimension(600, 400));
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     private void playButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_playButtonActionPerformed
@@ -142,6 +136,7 @@ public class Menu extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton creditButton;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JButton playButton;
     private javax.swing.JButton scoreButton;
     // End of variables declaration//GEN-END:variables
