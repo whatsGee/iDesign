@@ -27,6 +27,9 @@ public class startGame extends javax.swing.JFrame {
     private void initComponents() {
 
         backScores = new javax.swing.JButton();
+        z = new javax.swing.JButton();
+        x = new javax.swing.JButton();
+        c = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setTitle("Start Game");
@@ -43,6 +46,27 @@ public class startGame extends javax.swing.JFrame {
             }
         });
 
+        z.setText("Z");
+        z.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                zActionPerformed(evt);
+            }
+        });
+
+        x.setText("X");
+        x.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                xActionPerformed(evt);
+            }
+        });
+
+        c.setText("C");
+        c.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -50,13 +74,23 @@ public class startGame extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(backScores)
-                .addContainerGap(506, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(z, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(x, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(c, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(414, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(361, Short.MAX_VALUE)
-                .addComponent(backScores)
+                .addContainerGap(342, Short.MAX_VALUE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(backScores)
+                    .addComponent(z)
+                    .addComponent(x)
+                    .addComponent(c))
                 .addContainerGap())
         );
 
@@ -69,9 +103,43 @@ public class startGame extends javax.swing.JFrame {
         new Menu().setVisible(true);    // TODO add your handling code here:
     }//GEN-LAST:event_backScoresActionPerformed
 
+    private void zActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_zActionPerformed
+        if (word.contains("z"))
+        {
+            
+        }
+        else
+        {
+            z.setVisible(false);
+        }
+    }//GEN-LAST:event_zActionPerformed
+
+    private void xActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_xActionPerformed
+        if (word.contains("x"))
+        {
+            
+        }
+        else
+        {
+            x.setVisible(false);
+        }
+    }//GEN-LAST:event_xActionPerformed
+
+    private void cActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cActionPerformed
+        if (word.contains("c"))
+        {
+            
+        }
+        else
+        {
+            c.setVisible(false);
+        }
+    }//GEN-LAST:event_cActionPerformed
+
     /**
      * @param args the command line arguments
      */
+    private String word = "pharmacy";
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
@@ -106,5 +174,8 @@ public class startGame extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton backScores;
+    private javax.swing.JButton c;
+    private javax.swing.JButton x;
+    private javax.swing.JButton z;
     // End of variables declaration//GEN-END:variables
 }
