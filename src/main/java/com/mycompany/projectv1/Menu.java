@@ -3,6 +3,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
 package com.mycompany.projectv1;
+import javax.swing.ImageIcon;
 
 /**
  *
@@ -10,6 +11,7 @@ package com.mycompany.projectv1;
  */
 public class Menu extends javax.swing.JFrame {
 
+    ImageIcon background = new ImageIcon("hm4.jpg");
     /**
      * Creates new form Menu
      */
@@ -29,7 +31,7 @@ public class Menu extends javax.swing.JFrame {
         playButton = new javax.swing.JButton();
         scoreButton = new javax.swing.JButton();
         creditButton = new javax.swing.JButton();
-        jLabel1 = new javax.swing.JLabel();
+        bg = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Hangman by iDesign");
@@ -78,10 +80,10 @@ public class Menu extends javax.swing.JFrame {
         getContentPane().add(creditButton);
         creditButton.setBounds(280, 310, 170, 30);
 
-        jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\Gian\\OneDrive\\Pictures\\Random\\hm4.jpg")); // NOI18N
-        jLabel1.setPreferredSize(new java.awt.Dimension(600, 400));
-        getContentPane().add(jLabel1);
-        jLabel1.setBounds(0, 0, 600, 400);
+        bg.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/hm4.jpg"))); // NOI18N
+        bg.setPreferredSize(new java.awt.Dimension(600, 400));
+        getContentPane().add(bg);
+        bg.setBounds(0, 0, 600, 400);
 
         setSize(new java.awt.Dimension(616, 408));
         setLocationRelativeTo(null);
@@ -138,8 +140,8 @@ public class Menu extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel bg;
     private javax.swing.JButton creditButton;
-    private javax.swing.JLabel jLabel1;
     private javax.swing.JButton playButton;
     private javax.swing.JButton scoreButton;
     // End of variables declaration//GEN-END:variables
