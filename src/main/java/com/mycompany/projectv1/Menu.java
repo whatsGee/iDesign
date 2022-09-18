@@ -78,12 +78,12 @@ public class Menu extends javax.swing.JFrame {
         getContentPane().add(creditButton);
         creditButton.setBounds(280, 310, 170, 30);
 
-        jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\Gian\\OneDrive\\Pictures\\Random\\hm3.jpg")); // NOI18N
+        jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\Gian\\OneDrive\\Pictures\\Random\\hm4.jpg")); // NOI18N
         jLabel1.setPreferredSize(new java.awt.Dimension(600, 400));
         getContentPane().add(jLabel1);
         jLabel1.setBounds(0, 0, 600, 400);
 
-        setSize(new java.awt.Dimension(600, 400));
+        setSize(new java.awt.Dimension(616, 408));
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 

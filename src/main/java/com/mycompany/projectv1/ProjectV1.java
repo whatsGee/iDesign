@@ -12,6 +12,6 @@ package com.mycompany.projectv1;
 public class ProjectV1 {
 
     public static void main(String[] args) {
-        new Menu().setVisible(true);
+        new Loading().setVisible(true);
     }
 }
