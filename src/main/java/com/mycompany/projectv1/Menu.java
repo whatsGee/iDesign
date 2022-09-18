@@ -43,6 +43,7 @@ public class Menu extends javax.swing.JFrame {
         playButton.setFont(new java.awt.Font("Maiandra GD", 1, 18)); // NOI18N
         playButton.setForeground(new java.awt.Color(255, 255, 255));
         playButton.setText("PLAY");
+        playButton.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         playButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 playButtonActionPerformed(evt);
@@ -55,6 +56,7 @@ public class Menu extends javax.swing.JFrame {
         scoreButton.setFont(new java.awt.Font("Maiandra GD", 1, 18)); // NOI18N
         scoreButton.setForeground(new java.awt.Color(255, 255, 255));
         scoreButton.setText("HIGH SCORES");
+        scoreButton.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         scoreButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 scoreButtonActionPerformed(evt);
@@ -67,6 +69,7 @@ public class Menu extends javax.swing.JFrame {
         creditButton.setFont(new java.awt.Font("Maiandra GD", 1, 18)); // NOI18N
         creditButton.setForeground(new java.awt.Color(255, 255, 255));
         creditButton.setText("CREDITS");
+        creditButton.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         creditButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 creditButtonActionPerformed(evt);
@@ -78,7 +81,7 @@ public class Menu extends javax.swing.JFrame {
         jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\Gian\\OneDrive\\Pictures\\Random\\hm3.jpg")); // NOI18N
         jLabel1.setPreferredSize(new java.awt.Dimension(600, 400));
         getContentPane().add(jLabel1);
-        jLabel1.setBounds(-20, 0, 600, 400);
+        jLabel1.setBounds(0, 0, 600, 400);
 
         setSize(new java.awt.Dimension(600, 400));
         setLocationRelativeTo(null);

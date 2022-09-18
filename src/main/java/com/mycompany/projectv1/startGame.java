@@ -26,20 +26,20 @@ public class startGame extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        backGame = new javax.swing.JButton();
+        backScores = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setTitle("Start Game");
         setPreferredSize(new java.awt.Dimension(600, 400));
         setResizable(false);
 
-        backGame.setBackground(new java.awt.Color(0, 51, 102));
-        backGame.setFont(new java.awt.Font("Maiandra GD", 1, 14)); // NOI18N
-        backGame.setForeground(new java.awt.Color(255, 255, 255));
-        backGame.setText("Back");
-        backGame.addActionListener(new java.awt.event.ActionListener() {
+        backScores.setBackground(new java.awt.Color(153, 153, 153));
+        backScores.setFont(new java.awt.Font("Maiandra GD", 1, 14)); // NOI18N
+        backScores.setForeground(new java.awt.Color(255, 255, 255));
+        backScores.setText("Back");
+        backScores.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                backGameActionPerformed(evt);
+                backScoresActionPerformed(evt);
             }
         });
 
@@ -49,14 +49,14 @@ public class startGame extends javax.swing.JFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(backGame)
+                .addComponent(backScores)
                 .addContainerGap(506, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addContainerGap(361, Short.MAX_VALUE)
-                .addComponent(backGame)
+                .addComponent(backScores)
                 .addContainerGap())
         );
 
@@ -64,10 +64,10 @@ public class startGame extends javax.swing.JFrame {
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
-    private void backGameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backGameActionPerformed
+    private void backScoresActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backScoresActionPerformed
         dispose();
-        new Menu().setVisible(true);  // TODO add your handling code here:
-    }//GEN-LAST:event_backGameActionPerformed
+        new Menu().setVisible(true);    // TODO add your handling code here:
+    }//GEN-LAST:event_backScoresActionPerformed
 
     /**
      * @param args the command line arguments
@@ -105,6 +105,6 @@ public class startGame extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton backGame;
+    private javax.swing.JButton backScores;
     // End of variables declaration//GEN-END:variables
 }

@@ -26,47 +26,87 @@ public class Credits extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        backCredit = new javax.swing.JButton();
+        backScores = new javax.swing.JButton();
+        jLabel1 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setTitle("Credits");
+        setMaximumSize(new java.awt.Dimension(600, 400));
+        setPreferredSize(new java.awt.Dimension(600, 400));
         setResizable(false);
 
-        backCredit.setBackground(new java.awt.Color(0, 51, 102));
-        backCredit.setFont(new java.awt.Font("Maiandra GD", 1, 14)); // NOI18N
-        backCredit.setForeground(new java.awt.Color(255, 255, 255));
-        backCredit.setText("Back");
-        backCredit.addActionListener(new java.awt.event.ActionListener() {
+        backScores.setBackground(new java.awt.Color(153, 153, 153));
+        backScores.setFont(new java.awt.Font("Maiandra GD", 1, 14)); // NOI18N
+        backScores.setForeground(new java.awt.Color(255, 255, 255));
+        backScores.setText("Back");
+        backScores.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                backCreditActionPerformed(evt);
+                backScoresActionPerformed(evt);
             }
         });
+
+        jLabel1.setFont(new java.awt.Font("Castellar", 1, 48)); // NOI18N
+        jLabel1.setText("Credits");
+
+        jLabel2.setFont(new java.awt.Font("Felix Titling", 0, 18)); // NOI18N
+        jLabel2.setText("Amelie Ando                              015065245");
+
+        jLabel3.setFont(new java.awt.Font("Felix Titling", 0, 18)); // NOI18N
+        jLabel3.setText("Gian de jesus                              015515305");
+
+        jLabel4.setFont(new java.awt.Font("Felix Titling", 1, 18)); // NOI18N
+        jLabel4.setText("Name                                           bronco id");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(backCredit)
-                .addContainerGap(506, Short.MAX_VALUE))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(170, 170, 170)
+                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 239, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(98, 98, 98)
+                        .addComponent(jLabel4))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(98, 98, 98)
+                        .addComponent(jLabel2))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(98, 98, 98)
+                        .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 370, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(backScores)))
+                .addGap(104, 104, 104))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(361, Short.MAX_VALUE)
-                .addComponent(backCredit)
+            .addGroup(layout.createSequentialGroup()
+                .addGap(40, 40, 40)
+                .addComponent(jLabel1)
+                .addGap(16, 16, 16)
+                .addComponent(jLabel4)
+                .addGap(18, 18, 18)
+                .addComponent(jLabel2)
+                .addGap(6, 6, 6)
+                .addComponent(jLabel3)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 165, Short.MAX_VALUE)
+                .addComponent(backScores)
                 .addContainerGap())
         );
 
-        setSize(new java.awt.Dimension(600, 400));
+        setSize(new java.awt.Dimension(616, 408));
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
-    private void backCreditActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backCreditActionPerformed
+    private void backScoresActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backScoresActionPerformed
         dispose();
         new Menu().setVisible(true);    // TODO add your handling code here:
-    }//GEN-LAST:event_backCreditActionPerformed
+    }//GEN-LAST:event_backScoresActionPerformed
 
     /**
      * @param args the command line arguments
@@ -104,6 +144,10 @@ public class Credits extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton backCredit;
+    private javax.swing.JButton backScores;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
     // End of variables declaration//GEN-END:variables
 }
