@@ -26,7 +26,7 @@ public class Loading extends javax.swing.JFrame {
                     
                     try {
                     progress.setValue(i);
-                    Thread.sleep(30);
+                    Thread.sleep(20);
                     
                     if(i == 100){
                         dispose();
