@@ -34,16 +34,36 @@ public class startGame extends javax.swing.JFrame {
         c = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
         v = new javax.swing.JButton();
         b = new javax.swing.JButton();
         m = new javax.swing.JButton();
         n = new javax.swing.JButton();
+        a = new javax.swing.JButton();
+        s = new javax.swing.JButton();
+        d = new javax.swing.JButton();
+        h = new javax.swing.JButton();
+        g = new javax.swing.JButton();
+        j = new javax.swing.JButton();
+        k = new javax.swing.JButton();
+        l = new javax.swing.JButton();
+        q = new javax.swing.JButton();
+        w = new javax.swing.JButton();
+        e = new javax.swing.JButton();
+        f = new javax.swing.JButton();
+        r = new javax.swing.JButton();
+        t = new javax.swing.JButton();
+        y = new javax.swing.JButton();
+        u = new javax.swing.JButton();
+        i = new javax.swing.JButton();
+        o = new javax.swing.JButton();
+        p = new javax.swing.JButton();
+        jLabel4 = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setTitle("Start Game");
-        setMaximumSize(new java.awt.Dimension(600, 400));
         setResizable(false);
+        getContentPane().setLayout(null);
 
         backScores.setBackground(new java.awt.Color(153, 153, 153));
         backScores.setFont(new java.awt.Font("Maiandra GD", 1, 14)); // NOI18N
@@ -54,6 +74,8 @@ public class startGame extends javax.swing.JFrame {
                 backScoresActionPerformed(evt);
             }
         });
+        getContentPane().add(backScores);
+        backScores.setBounds(10, 340, 72, 25);
 
         z.setText("Z");
         z.addActionListener(new java.awt.event.ActionListener() {
@@ -61,6 +83,8 @@ public class startGame extends javax.swing.JFrame {
                 zActionPerformed(evt);
             }
         });
+        getContentPane().add(z);
+        z.setBounds(110, 320, 50, 50);
 
         x.setText("X");
         x.addActionListener(new java.awt.event.ActionListener() {
@@ -68,6 +92,8 @@ public class startGame extends javax.swing.JFrame {
                 xActionPerformed(evt);
             }
         });
+        getContentPane().add(x);
+        x.setBounds(170, 320, 50, 50);
 
         c.setText("C");
         c.addActionListener(new java.awt.event.ActionListener() {
@@ -75,14 +101,18 @@ public class startGame extends javax.swing.JFrame {
                 cActionPerformed(evt);
             }
         });
+        getContentPane().add(c);
+        c.setBounds(230, 320, 50, 50);
 
+        jLabel1.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         jLabel1.setText("O");
+        getContentPane().add(jLabel1);
+        jLabel1.setBounds(280, 40, 20, 20);
 
         jLabel3.setFont(new java.awt.Font("Helvetica Neue", 0, 120)); // NOI18N
-        jLabel3.setText("I");
-
-        jLabel2.setFont(new java.awt.Font("Helvetica Neue", 1, 120)); // NOI18N
-        jLabel2.setText("~");
+        jLabel3.setText("Γ");
+        getContentPane().add(jLabel3);
+        jLabel3.setBounds(180, 20, 70, 89);
 
         v.setText("V");
         v.addActionListener(new java.awt.event.ActionListener() {
@@ -90,6 +120,8 @@ public class startGame extends javax.swing.JFrame {
                 vActionPerformed(evt);
             }
         });
+        getContentPane().add(v);
+        v.setBounds(290, 320, 50, 50);
 
         b.setText("B");
         b.addActionListener(new java.awt.event.ActionListener() {
@@ -97,6 +129,8 @@ public class startGame extends javax.swing.JFrame {
                 bActionPerformed(evt);
             }
         });
+        getContentPane().add(b);
+        b.setBounds(350, 320, 50, 50);
 
         m.setText("M");
         m.addActionListener(new java.awt.event.ActionListener() {
@@ -104,6 +138,8 @@ public class startGame extends javax.swing.JFrame {
                 mActionPerformed(evt);
             }
         });
+        getContentPane().add(m);
+        m.setBounds(470, 320, 50, 50);
 
         n.setText("N");
         n.addActionListener(new java.awt.event.ActionListener() {
@@ -111,69 +147,188 @@ public class startGame extends javax.swing.JFrame {
                 nActionPerformed(evt);
             }
         });
+        getContentPane().add(n);
+        n.setBounds(410, 320, 50, 50);
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addGap(0, 266, Short.MAX_VALUE)
-                        .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(272, 272, 272))
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(backScores)
-                        .addGap(18, 18, 18)
-                        .addComponent(z, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
-                        .addComponent(x, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
-                        .addComponent(c, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
-                        .addComponent(v, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
-                        .addComponent(b, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
-                        .addComponent(n, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
-                        .addComponent(m, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jLabel1)
-                .addGap(291, 291, 291))
-            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(layout.createSequentialGroup()
-                    .addGap(248, 248, 248)
-                    .addComponent(jLabel3)
-                    .addContainerGap(319, Short.MAX_VALUE)))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addGap(87, 87, 87)
-                .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 11, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 190, Short.MAX_VALUE)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(backScores)
-                    .addComponent(z, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(x, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(c, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(v, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(n, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(b, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(m, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap())
-            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(layout.createSequentialGroup()
-                    .addGap(97, 97, 97)
-                    .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 89, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addContainerGap(214, Short.MAX_VALUE)))
-        );
+        a.setText("A");
+        a.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                aActionPerformed(evt);
+            }
+        });
+        getContentPane().add(a);
+        a.setBounds(40, 260, 50, 50);
+
+        s.setText("S");
+        s.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                sActionPerformed(evt);
+            }
+        });
+        getContentPane().add(s);
+        s.setBounds(100, 260, 50, 50);
+
+        d.setText("D");
+        d.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                dActionPerformed(evt);
+            }
+        });
+        getContentPane().add(d);
+        d.setBounds(160, 260, 50, 50);
+
+        h.setText("H");
+        h.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                hActionPerformed(evt);
+            }
+        });
+        getContentPane().add(h);
+        h.setBounds(340, 260, 50, 50);
+
+        g.setText("G");
+        g.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                gActionPerformed(evt);
+            }
+        });
+        getContentPane().add(g);
+        g.setBounds(280, 260, 50, 50);
+
+        j.setText("J");
+        j.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jActionPerformed(evt);
+            }
+        });
+        getContentPane().add(j);
+        j.setBounds(400, 260, 50, 50);
+
+        k.setText("K");
+        k.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                kActionPerformed(evt);
+            }
+        });
+        getContentPane().add(k);
+        k.setBounds(460, 260, 50, 50);
+
+        l.setText("L");
+        l.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                lActionPerformed(evt);
+            }
+        });
+        getContentPane().add(l);
+        l.setBounds(520, 260, 50, 50);
+
+        q.setText("Q");
+        q.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                qActionPerformed(evt);
+            }
+        });
+        getContentPane().add(q);
+        q.setBounds(10, 200, 50, 50);
+
+        w.setText("W");
+        w.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                wActionPerformed(evt);
+            }
+        });
+        getContentPane().add(w);
+        w.setBounds(70, 200, 50, 50);
+
+        e.setText("E");
+        e.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                eActionPerformed(evt);
+            }
+        });
+        getContentPane().add(e);
+        e.setBounds(130, 200, 50, 50);
+
+        f.setText("F");
+        f.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                fActionPerformed(evt);
+            }
+        });
+        getContentPane().add(f);
+        f.setBounds(220, 260, 50, 50);
+
+        r.setText("R");
+        r.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                rActionPerformed(evt);
+            }
+        });
+        getContentPane().add(r);
+        r.setBounds(190, 200, 50, 50);
+
+        t.setText("T");
+        t.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                tActionPerformed(evt);
+            }
+        });
+        getContentPane().add(t);
+        t.setBounds(250, 200, 50, 50);
+
+        y.setText("Y");
+        y.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                yActionPerformed(evt);
+            }
+        });
+        getContentPane().add(y);
+        y.setBounds(310, 200, 50, 50);
+
+        u.setText("U");
+        u.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                uActionPerformed(evt);
+            }
+        });
+        getContentPane().add(u);
+        u.setBounds(370, 200, 50, 50);
+
+        i.setText("I");
+        i.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                iActionPerformed(evt);
+            }
+        });
+        getContentPane().add(i);
+        i.setBounds(430, 200, 50, 50);
+
+        o.setText("O");
+        o.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                oActionPerformed(evt);
+            }
+        });
+        getContentPane().add(o);
+        o.setBounds(490, 200, 50, 50);
+
+        p.setText("P");
+        p.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                pActionPerformed(evt);
+            }
+        });
+        getContentPane().add(p);
+        p.setBounds(550, 200, 50, 50);
+
+        jLabel4.setFont(new java.awt.Font("Engravers MT", 1, 48)); // NOI18N
+        jLabel4.setText("----");
+        getContentPane().add(jLabel4);
+        jLabel4.setBounds(230, 130, 106, 56);
+
+        jLabel5.setText("|");
+        getContentPane().add(jLabel5);
+        jLabel5.setBounds(290, 60, 30, 30);
 
         setSize(new java.awt.Dimension(616, 408));
         setLocationRelativeTo(null);
@@ -185,7 +340,7 @@ public class startGame extends javax.swing.JFrame {
     }//GEN-LAST:event_backScoresActionPerformed
 
     private void zActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_zActionPerformed
-        if (word.contains("z"))
+        if (getRandomWord().contains("z"))
         {
             
         }
@@ -244,6 +399,82 @@ public class startGame extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_nActionPerformed
 
+    private void aActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_aActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_aActionPerformed
+
+    private void sActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_sActionPerformed
+
+    private void dActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_dActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_dActionPerformed
+
+    private void hActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_hActionPerformed
+
+    private void gActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_gActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_gActionPerformed
+
+    private void jActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jActionPerformed
+
+    private void kActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_kActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_kActionPerformed
+
+    private void lActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_lActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_lActionPerformed
+
+    private void qActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_qActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_qActionPerformed
+
+    private void wActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_wActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_wActionPerformed
+
+    private void eActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_eActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_eActionPerformed
+
+    private void fActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_fActionPerformed
+
+    private void rActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_rActionPerformed
+
+    private void tActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_tActionPerformed
+
+    private void yActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_yActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_yActionPerformed
+
+    private void uActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_uActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_uActionPerformed
+
+    private void iActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_iActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_iActionPerformed
+
+    private void oActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_oActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_oActionPerformed
+
+    private void pActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_pActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_pActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -253,8 +484,6 @@ public class startGame extends javax.swing.JFrame {
     public static void main(String args[]) {
         String generatedWord = getRandomWord();
         System.out.println(generatedWord);
-        
-        iterateString(generatedWord);
         
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
@@ -298,16 +527,36 @@ public class startGame extends javax.swing.JFrame {
     
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton a;
     private javax.swing.JButton b;
     private javax.swing.JButton backScores;
     private javax.swing.JButton c;
+    private javax.swing.JButton d;
+    private javax.swing.JButton e;
+    private javax.swing.JButton f;
+    private javax.swing.JButton g;
+    private javax.swing.JButton h;
+    private javax.swing.JButton i;
+    private javax.swing.JButton j;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JButton k;
+    private javax.swing.JButton l;
     private javax.swing.JButton m;
     private javax.swing.JButton n;
+    private javax.swing.JButton o;
+    private javax.swing.JButton p;
+    private javax.swing.JButton q;
+    private javax.swing.JButton r;
+    private javax.swing.JButton s;
+    private javax.swing.JButton t;
+    private javax.swing.JButton u;
     private javax.swing.JButton v;
+    private javax.swing.JButton w;
     private javax.swing.JButton x;
+    private javax.swing.JButton y;
     private javax.swing.JButton z;
     // End of variables declaration//GEN-END:variables
 }
