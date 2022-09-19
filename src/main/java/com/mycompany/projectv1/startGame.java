@@ -3,6 +3,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
 package com.mycompany.projectv1;
+import java.util.Random;
 
 /**
  *
@@ -16,6 +17,7 @@ public class startGame extends javax.swing.JFrame {
     public startGame() {
         initComponents();
         jLabel1.setVisible(false);
+        System.out.println(getRandomWord());
     }
 
     /**
@@ -220,7 +222,15 @@ public class startGame extends javax.swing.JFrame {
     }//GEN-LAST:event_cActionPerformed
 
     private void vActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_vActionPerformed
-        // TODO add your handling code here:
+        if (word.contains("v"))
+        {
+            
+        }
+        else
+        {
+            v.setVisible(false);
+            jLabel1.setVisible(true);
+        }
     }//GEN-LAST:event_vActionPerformed
 
     private void bActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bActionPerformed
@@ -238,7 +248,8 @@ public class startGame extends javax.swing.JFrame {
     /**
      * @param args the command line arguments
      */
-    private String word = "pharmacy";
+    private String word = "";
+    private String wordBank[] = {"abstract", "cemetary", "nurse", "pharmacy", "climbing"};
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
@@ -271,6 +282,15 @@ public class startGame extends javax.swing.JFrame {
             }
         });
     }
+    
+    public String getRandomWord()
+    {
+        Random random = new Random();
+        int rand = random.nextInt(6);
+        return wordBank[rand];
+    }
+    
+    
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton b;
