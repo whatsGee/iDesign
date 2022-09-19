@@ -15,7 +15,7 @@ public class startGame extends javax.swing.JFrame {
      */
     public startGame() {
         initComponents();
-        jLabel1.setVisible(false);
+        head.setVisible(false);
         
     }
 
@@ -32,7 +32,7 @@ public class startGame extends javax.swing.JFrame {
         z = new javax.swing.JButton();
         x = new javax.swing.JButton();
         c = new javax.swing.JButton();
-        jLabel1 = new javax.swing.JLabel();
+        head = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         v = new javax.swing.JButton();
         b = new javax.swing.JButton();
@@ -58,7 +58,11 @@ public class startGame extends javax.swing.JFrame {
         o = new javax.swing.JButton();
         p = new javax.swing.JButton();
         jLabel4 = new javax.swing.JLabel();
-        jLabel5 = new javax.swing.JLabel();
+        body = new javax.swing.JLabel();
+        leftArm = new javax.swing.JLabel();
+        leftLeg = new javax.swing.JLabel();
+        rightArm = new javax.swing.JLabel();
+        rightLeg = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setTitle("Start Game");
@@ -104,15 +108,15 @@ public class startGame extends javax.swing.JFrame {
         getContentPane().add(c);
         c.setBounds(230, 320, 50, 50);
 
-        jLabel1.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        jLabel1.setText("O");
-        getContentPane().add(jLabel1);
-        jLabel1.setBounds(280, 40, 20, 20);
+        head.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
+        head.setText("O");
+        getContentPane().add(head);
+        head.setBounds(280, 40, 20, 20);
 
         jLabel3.setFont(new java.awt.Font("Helvetica Neue", 0, 120)); // NOI18N
         jLabel3.setText("Γ");
         getContentPane().add(jLabel3);
-        jLabel3.setBounds(180, 20, 70, 89);
+        jLabel3.setBounds(220, 20, 70, 110);
 
         v.setText("V");
         v.addActionListener(new java.awt.event.ActionListener() {
@@ -326,13 +330,34 @@ public class startGame extends javax.swing.JFrame {
         getContentPane().add(jLabel4);
         jLabel4.setBounds(230, 130, 106, 56);
 
-        jLabel5.setText("|");
-        getContentPane().add(jLabel5);
-        jLabel5.setBounds(290, 60, 30, 30);
+        body.setFont(new java.awt.Font("Segoe UI", 0, 48)); // NOI18N
+        body.setText(" |");
+        getContentPane().add(body);
+        body.setBounds(270, 60, 40, 40);
 
-        setSize(new java.awt.Dimension(616, 408));
-        setLocationRelativeTo(null);
-    }// </editor-fold>//GEN-END:initComponents
+        leftArm.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
+        leftArm.setText("/");
+        getContentPane().add(leftArm);
+        leftArm.setBounds(270, 50, 10, 40);
+
+        leftLeg.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
+        leftLeg.setText("/");
+        getContentPane().add(leftLeg);
+        leftLeg.setBounds(280, 90, 10, 40);
+
+        rightArm.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
+        rightArm.setText("\\");
+            getContentPane().add(rightArm);
+            rightArm.setBounds(300, 50, 30, 40);
+
+            rightLeg.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
+            rightLeg.setText("\\");
+                getContentPane().add(rightLeg);
+                rightLeg.setBounds(290, 90, 30, 40);
+
+                setSize(new java.awt.Dimension(616, 408));
+                setLocationRelativeTo(null);
+            }// </editor-fold>//GEN-END:initComponents
 
     private void backScoresActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backScoresActionPerformed
         dispose();
@@ -347,7 +372,7 @@ public class startGame extends javax.swing.JFrame {
         else
         {
             z.setVisible(false);
-            jLabel1.setVisible(true);
+            head.setVisible(true);
         }
     }//GEN-LAST:event_zActionPerformed
 
@@ -359,7 +384,7 @@ public class startGame extends javax.swing.JFrame {
         else
         {
             x.setVisible(false);
-            jLabel1.setVisible(true);
+            head.setVisible(true);
         }
     }//GEN-LAST:event_xActionPerformed
 
@@ -371,7 +396,7 @@ public class startGame extends javax.swing.JFrame {
         else
         {
             c.setVisible(false);
-            jLabel1.setVisible(true);
+            head.setVisible(true);
         }
     }//GEN-LAST:event_cActionPerformed
 
@@ -383,7 +408,7 @@ public class startGame extends javax.swing.JFrame {
         else
         {
             v.setVisible(false);
-            jLabel1.setVisible(true);
+            head.setVisible(true);
         }
     }//GEN-LAST:event_vActionPerformed
 
@@ -530,26 +555,30 @@ public class startGame extends javax.swing.JFrame {
     private javax.swing.JButton a;
     private javax.swing.JButton b;
     private javax.swing.JButton backScores;
+    private javax.swing.JLabel body;
     private javax.swing.JButton c;
     private javax.swing.JButton d;
     private javax.swing.JButton e;
     private javax.swing.JButton f;
     private javax.swing.JButton g;
     private javax.swing.JButton h;
+    private javax.swing.JLabel head;
     private javax.swing.JButton i;
     private javax.swing.JButton j;
-    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
     private javax.swing.JButton k;
     private javax.swing.JButton l;
+    private javax.swing.JLabel leftArm;
+    private javax.swing.JLabel leftLeg;
     private javax.swing.JButton m;
     private javax.swing.JButton n;
     private javax.swing.JButton o;
     private javax.swing.JButton p;
     private javax.swing.JButton q;
     private javax.swing.JButton r;
+    private javax.swing.JLabel rightArm;
+    private javax.swing.JLabel rightLeg;
     private javax.swing.JButton s;
     private javax.swing.JButton t;
     private javax.swing.JButton u;
