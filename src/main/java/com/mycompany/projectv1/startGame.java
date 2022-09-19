@@ -10,13 +10,6 @@ import java.util.Random;
  * @author Gian
  */
 public class startGame extends javax.swing.JFrame {
-
-    static void iterateString(String str){
-        for(int i = 0; i < str.length(); i++){
-            System.out.println(str.charAt(i) + " ");
-        }
-    }
-    
     /**
      * Creates new form startGame
      */
@@ -298,7 +291,7 @@ public class startGame extends javax.swing.JFrame {
     public static String getRandomWord()
     {
         Random random = new Random();
-        int rand = random.nextInt(5);
+        int rand = random.nextInt(4);
         return wordBank[rand];
     }
     
