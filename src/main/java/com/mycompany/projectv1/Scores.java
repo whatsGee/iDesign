@@ -58,7 +58,7 @@ public class Scores extends javax.swing.JFrame {
         jLabel3.setText("Name                                 Score");
 
         jLabel4.setFont(new java.awt.Font("Candara Light", 0, 24)); // NOI18N
-        jLabel4.setText("Gee..................................20 pts");
+        jLabel4.setText("Gee..................................40 pts");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
