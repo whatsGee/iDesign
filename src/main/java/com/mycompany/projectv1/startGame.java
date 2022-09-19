@@ -298,7 +298,7 @@ public class startGame extends javax.swing.JFrame {
     public static String getRandomWord()
     {
         Random random = new Random();
-        int rand = random.nextInt(6);
+        int rand = random.nextInt(5);
         return wordBank[rand];
     }
     
