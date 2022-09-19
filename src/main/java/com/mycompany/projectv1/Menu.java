@@ -80,7 +80,6 @@ public class Menu extends javax.swing.JFrame {
         getContentPane().add(creditButton);
         creditButton.setBounds(280, 310, 170, 30);
 
-        bg.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/hm4.jpg"))); // NOI18N
         bg.setPreferredSize(new java.awt.Dimension(600, 400));
         getContentPane().add(bg);
         bg.setBounds(0, 0, 600, 400);

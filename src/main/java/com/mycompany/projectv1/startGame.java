@@ -11,6 +11,12 @@ import java.util.Random;
  */
 public class startGame extends javax.swing.JFrame {
 
+    static void iterateString(String str){
+        for(int i = 0; i < str.length(); i++){
+            System.out.println(str.charAt(i) + " ");
+        }
+    }
+    
     /**
      * Creates new form startGame
      */
@@ -251,6 +257,14 @@ public class startGame extends javax.swing.JFrame {
     private String word = "";
     private String wordBank[] = {"abstract", "cemetary", "nurse", "pharmacy", "climbing"};
     public static void main(String args[]) {
+        String words[] = {"abstract", "cemetary", "nurse", "pharmacy", "climbing"};
+        Random random = new Random();
+        int rand = random.nextInt(6);
+    
+        String generatedWord = words[rand];
+        
+        iterateString(generatedWord);
+        
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
         /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
