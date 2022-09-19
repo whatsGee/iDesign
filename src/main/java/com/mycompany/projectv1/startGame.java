@@ -23,7 +23,7 @@ public class startGame extends javax.swing.JFrame {
     public startGame() {
         initComponents();
         jLabel1.setVisible(false);
-        System.out.println(getRandomWord());
+        
     }
 
     /**
@@ -254,14 +254,12 @@ public class startGame extends javax.swing.JFrame {
     /**
      * @param args the command line arguments
      */
-    private String word = "";
-    private String wordBank[] = {"abstract", "cemetary", "nurse", "pharmacy", "climbing"};
-    public static void main(String args[]) {
-        String words[] = {"abstract", "cemetary", "nurse", "pharmacy", "climbing"};
-        Random random = new Random();
-        int rand = random.nextInt(6);
+    private static String word = "";
+    private static String wordBank[] = {"abstract", "cemetary", "nurse", "pharmacy", "climbing"};
     
-        String generatedWord = words[rand];
+    public static void main(String args[]) {
+        String generatedWord = getRandomWord();
+        System.out.println(generatedWord);
         
         iterateString(generatedWord);
         
@@ -297,7 +295,7 @@ public class startGame extends javax.swing.JFrame {
         });
     }
     
-    public String getRandomWord()
+    public static String getRandomWord()
     {
         Random random = new Random();
         int rand = random.nextInt(6);
